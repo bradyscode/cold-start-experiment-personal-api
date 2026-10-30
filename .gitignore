@@ -1,0 +1,14 @@
+.vs/
+.superpowers/
+bin/
+obj/
+data/
+*.user
+.playwright-mcp/
+*.db
+*.db-wal
+*.db-shm
+*.db.bak*
+.env
+.env.*
+!.env.example

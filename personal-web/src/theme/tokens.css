@@ -1,0 +1,72 @@
+:root {
+  --steel: #10141a;
+  --cobalt: #3f7bff;
+  --verdigris: #1fbf9f;
+  --safety-orange: #ff5a1f;
+  --brass: #e3a72f;
+  --ember: #b4471f;
+  --bone: #d9d6cc;
+  --text: #f3f1ea;
+  --card-dark: #171c25;
+  --line: #2a303a;
+  --field-border: #66717f;
+  /* Admin dashboards: all text tokens clear 4.5:1 and graphic tokens 3:1 on --card-dark. */
+  --muted: #9aa3b2;
+  --raised: #1d2330;
+  --grid: #262c37;
+  --axis-line: #3a4250;
+  --good: #3dd68c;
+  --bad: #ff8a6b;
+  --neutral-mark: #8a93a3;
+  --touch-min: 44px;
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--steel);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+}
+
+.screen {
+  padding: 24px 16px;
+}
+
+.touch-target {
+  min-width: var(--touch-min);
+  min-height: var(--touch-min);
+}
+
+:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

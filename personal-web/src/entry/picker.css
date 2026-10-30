@@ -1,0 +1,39 @@
+.picker-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.picker-current {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.picker-toggle {
+  min-height: var(--touch-min);
+}
+
+.picker {
+  margin-bottom: 16px;
+}
+
+.picker-search {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.picker-groups {
+  display: grid;
+  gap: 14px;
+}
+
+.picker-heading {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}

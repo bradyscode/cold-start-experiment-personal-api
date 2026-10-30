@@ -1,0 +1,6 @@
+@personal_api_HostAddress = http://localhost:5047
+
+GET {{personal_api_HostAddress}}/health
+Accept: application/json
+
+###
